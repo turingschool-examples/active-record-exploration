@@ -10,7 +10,7 @@ Matt
 
 #### Say we have a table of singers with columns first_name, last_name, and genre
 
-    Singer.find_or_create_by(first_name: 'Taylor', genre: Pop)
+    Singer.find_or_create_by(first_name: 'Taylor', genre: 'Pop')
       # => #<Singer id: 1, first_name: 'Taylor', last_name: nil, genre: 'Pop'>
     Singer.find_or_create_by(first_name: 'Elvis')
       # => #<Singer id: 2, first_name: 'Elvis', last_name: nil, genre: nil>
