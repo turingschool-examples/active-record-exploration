@@ -1,7 +1,7 @@
 
 Matt
 * AR Method:
-### find_or_create_by(attributes, &block)
+### find_or_create(attributes, &block)
 
 * Description:
 #### Finds the first record with the given attributes or creates the record with the attributes if the record is not found
@@ -23,4 +23,5 @@ Matt
       
 * Anything Else?:
 
-#### If you don't have your fields validated on creation, it will create attributes with nil values as long as it doesn't find the attributes you pass in. To validate authenticity, you would have to run all attributes through as arguments.
+####    * If you don't have your fields validated on creation, it will create attributes with nil values as long as it doesn't find the attributes you pass in. 
+        * To validate authenticity, you would have to run all attributes through as arguments.
