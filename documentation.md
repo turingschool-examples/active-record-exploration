@@ -16,4 +16,4 @@
       # => #<Singer id: 1, first_name: Taylor, last_name: nil, genre: Pop>
     Singer.find_or_create_by(genre: Rock)
       # => #<Singer id: 3, first_name: nil, last_name: nil, genre: Rock>
-#### If you don't have your fields validated on creation, it will create attributes with nil values as long as it doesn't find the one attributes you pass in. Best practice would be to run all all attributes as agrguments to validate authenticity.
+#### If you don't have your fields validated on creation, it will create attributes with nil values as long as it doesn't find the attributes you pass in. Best practice would be to run all all attributes as agrguments to validate authenticity.
