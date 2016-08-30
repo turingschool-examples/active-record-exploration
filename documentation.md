@@ -34,6 +34,4 @@ Matt
 
 ####If you don't have your fields validated on creation, it will create attributes with nil values as long as it doesn't find the attributes you pass in. 
 
-#### To validate authenticity, you would have to run all attributes through as arguments.
-
-#### Only returns one object.  The first one if finds, so if you are running a block, it will only update one record.
+#### Only returns one object with the specific matching attributes.
