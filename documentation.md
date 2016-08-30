@@ -26,7 +26,7 @@ Matt
 
     Singer.find_or_create_by(first_name: 'Justin') do |singer|
         singer.last_name = 'Bieber'
-        singer.genre = 'Pop
+        singer.genre = 'Bad'
     end
       # => #<Singer id: 4, first_name: 'Justin', last_name: 'Bieber', genre: 'Bad'>
       
