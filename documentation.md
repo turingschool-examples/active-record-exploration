@@ -1,7 +1,3 @@
- * AR Method: 
- 
-  * Example:
-  * Anything else?:
 
 * AR Method:
 ### find_or_create(attributes, &block)
