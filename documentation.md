@@ -57,10 +57,10 @@ David Davydov
 
 Jasmin
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: LIMIT
+  * Description: This class method allows you to control the number of records you wish to retrieve from a table. 
+  * Example: `Student.limit(2) #=> Only retrieves the first two records in the Students table`
+  * Anything else?: In conjunction with `#limit`, you can also use `#offset` to specify the number of records to skip before starting to return the records. Example: `Student.limit(3).offset(30) #=> Grabs the first 3 records after skipping the first 30`
 
 Jean
 
