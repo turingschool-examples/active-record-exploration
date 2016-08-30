@@ -1,7 +1,7 @@
 
 Matt
 * AR Method:
-### find_or_create(attributes, &block)
+### find_or_create_by(attributes, &block)
 
 * Description:
 #### Finds the first record with the given attributes or creates the record with the attributes if the record is not found
