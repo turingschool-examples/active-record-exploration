@@ -21,4 +21,5 @@
       # => #<Singer id: 3, first_name: nil, last_name: nil, genre: Rock>
       
 * Anything Else?:
+
 #### If you don't have your fields validated on creation, it will create attributes with nil values as long as it doesn't find the attributes you pass in. To validate authenticity, you would have to run all attributes through as arguments.
