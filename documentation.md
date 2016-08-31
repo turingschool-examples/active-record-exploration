@@ -24,10 +24,10 @@ Brian
 
 Goss
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: Select  
+  * Description: Select allows us to return an active record Relation object with data from one or more specific columns from a table. This is a collection of rows from the table, where each object has the data specified in the Select for the row it represents. Any columns excluded from the Select will not be included in the return value, they will be set to nil; even the id will be nil unless you include it in the Select. It can accept symbols as arguments, an it will return columns with the same name as the symbols. Alternatively, you can pass a string which will be embeded in a SQL Select statement. This is useful for doing calculations or manipulation on each row returned by the select. Select is usually the second method in a chain of Active Record methods, after the table or collection and before methods that transform or limit the result.  
+  * Example: Students.select(:name, :email).order(:name); Teachers.select('average(Time.now - hire_date) as seniority');  
+  * Anything else?: Select only populates the data you ask for. A collection built from a select method will not include any of the columns not listed.  
 
 Chase 
 
