@@ -56,7 +56,7 @@ Dan
 
 **Count by Column:** <br />
 	-	Car.count(:sunroof)<br />
-	-	# -> All the cars that have a value in the sunroof column<br /><br />
+	-	# -> All the cars that have a value in the sunroof column<br />
 
 **Count with Group or Select:** <br />
 	-	Car.group(:make).count<br />
