@@ -85,10 +85,12 @@ Matt
 
 Nate
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: Distinct
+  * Description: Specifies whether the record returned should be unique or not.
+  * Example: Teacher.select(:name) <= Might return two records with the same name
+             Teacher.select(:name).distinct <= Returns one record per distinct name
+  * Anything else?: You can also remove the uniqueness by placing two distincts consecutively and placing false in parens 
+  at the end. ex. Teacher.select(:name).distinct.distinct(false)
 
 Raphael
 
