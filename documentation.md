@@ -113,8 +113,13 @@ Sonia
 
 Susi
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: `.create!`
+  * Description: This will create (meaning, perform both new and save in the database) an object or multiple objects. The difference between between create and create! is that create! will raise a "RecordInvalid" error if the validations for the object fail, whereas create on its own does not do this.
+  * Example: If you want to create a new student in the database and it requires first name and last name, you might want to record an error if a field is left blank rather than only not save the object.
+  
+ `student = Student.create!(last_name = "Smith")`
+ the return would be something like:
+  `puts invalid.record.errors`
+
+  * Anything else?:  This is very similar to the way save! operates. 
   
