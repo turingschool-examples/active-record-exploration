@@ -36,10 +36,14 @@ Chase
   * Anything else?:
 
 Calaway
-  * AR Method: 
-  * Description:
-  * Example:
+  * AR Method: having
+    * Description: Having is always used in conjuction with group. Think of it as "group where." (Note that where cannot be called after group, hence the need for a different method).
+  * Example: 
+    * Find all products for which the price is the same as at least 4 other products. Said another way, group all products by their price, then count how many items share the same prices, then return only the collections of products for which that count is 5 or more. So group by price where that count is greater than 4.
+    * `Product.group(:price).having("count(price) > 5")`
   * Anything else?:
+    * Input: result of a group query (an ActiveRecord object)
+    * Output: new ActiveRecord object with a collection of elements matching the group/having combination.
 
 Dan
 
