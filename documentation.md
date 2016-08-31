@@ -94,8 +94,8 @@ Raphael
 
   * AR Method: Offset
   * Description: Essentially it specifies the number of rows that needs to be skipped before returning rows.
-  * Example: SELECT * FROM clients OFFSET 30
-  * Anything else?: will return clients beginning with the 31st row and SQL looks like above.
+  * Example: Artist.offset(10)
+  * Anything else?: Let's say we have a total Artist.count => 12. When I call the ActiveRecord method "offset" with a given value of 10, it will return the following:  Artist.offset(10) => #<ActiveRecord::Relation [#<Artist id: 11, name: "Tommy Guerrero", created_at: "2016-08-31 15:51:27", updated_at: "2016-08-31 15:51:27">, #<Artist id: 12, name: "Ray Barbee", created_at: "2016-08-31 15:51:27", updated_at: "2016-08-31 15:51:27">]>.
 
 Ryan
 
