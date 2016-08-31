@@ -75,10 +75,17 @@ Dan
 
 David Davydov
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: 	`save`
+  * Description: This method creates an already existing object in the database. It returns false if it wasn't able to be created, possibly because of failed validations like `presence: true`.
+  * Example: 
+  ```ruby
+  Student.all.count => 0
+  s1 = Student.new(name: 'bob')
+  s1.save => true
+  s2 = Student.new
+  s2.save => false
+   ```bob = Student.new; bob.save
+  * Anything else?: `create` is the same as `new` and `save`. `new` makes the object, and `save` saves it in the actual database.
 
 Jasmin
 
