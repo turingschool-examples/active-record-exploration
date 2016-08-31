@@ -9,10 +9,11 @@ Ben
 
 Brendan
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: `average`
+  * Description: Given one column on a table, `average` finds the mean of the values in that column.
+  * Example: `Item.average(:price)`
+  * Anything else?: Conditions for what values to average can be passed in as an argument, like
+   + `Item.average(:price, conditions:["price < 50"])`
 
 Brian
 
