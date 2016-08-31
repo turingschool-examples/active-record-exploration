@@ -140,10 +140,10 @@ end
 
 Sonia
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: take
+  * Description: It returns an array containing a specificed number or default number of objects from a class. The array is not necessarily in a particular order.
+  * Example: `PayloadRequest.take` returns an array containing one `PayloadRequest` object, the first one created. `PayloadRequest.take(5)` returns the first five objects in the collection, but not necessarily in order.
+  * Anything else?: It is important to distinguish between .take and .limit. The latter returns an ActiveRecord relation which means you can chain more methods to it, unlike with .take.
 
 Susi
 
