@@ -99,10 +99,17 @@ Raphael
 
 Ryan
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: includes
+  * Description: Class method allowing a user to call only the columns with a specified attribute.
+  * Example: 
+```ruby
+@companies = Company.includes(:persons).where(:persons => { active: true } ).all
+ 
+@companies.each do |company|
+     company.person.name
+end
+```
+  * Anything else?: This method is similar to joins, but as the Rails docs states, includes loads the specified associations using a minimal amount of queries.  This, in turn, leads to better performance than joins.
 
 Sonia
 
