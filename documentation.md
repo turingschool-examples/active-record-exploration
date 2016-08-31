@@ -52,7 +52,7 @@ Dan
   * Example:<br />
 	**Count All:**  <br />
 		Car.count<br />
-		# -> The count of all the cars<br /><br />
+		# -> The count of all the cars<br />
 
 	**Count by Column:** <br />
 		Car.count(:sunroof)<br />
