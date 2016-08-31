@@ -30,10 +30,10 @@ Goss
 
 Chase 
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: Group
+  * Description: Returns an array of unique objects based on whatever attribute you have passed it.  
+  * Example: Users.group(:name) will return [#<User id: 1, name: bob, state: Texas> #<User id:2, name:Chase, state: Texas>] 
+  * Anything else?: Group is almost always follwed by a .count.    
 
 Calaway
   * AR Method: 
