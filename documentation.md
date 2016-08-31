@@ -51,21 +51,21 @@ Dan
 	**Count with Group or Select:** You can call count after .group or .select to get more specific counts.<br />
   * Example:<br />
 	**Count All:**  <br />
-	-	Car.count<br />
-	-	# -> The count of all the cars<br /><br />
+		Car.count<br />
+		# -> The count of all the cars<br /><br />
 
 	**Count by Column:** <br />
-	-	Car.count(:sunroof)<br />
-	-	# -> All the cars that have a value in the sunroof column<br />
+		Car.count(:sunroof)<br />
+		# -> All the cars that have a value in the sunroof column<br />
 
 	**Count with Group or Select:** <br />
-	-	Car.group(:make).count<br />
-	-	# -> { ’Nissan’ => 80 , ‘Mazda’ => 53 , ’Tesla’ => 1337 }<br />
-	-	You can also group multiple columns and then get the count:<br />
-	-	Car.group(:model, :color)<br />
-	-	# -> { [‘Model S’, ‘red’] => 74, [‘GTR’, ‘silver’] => 55 }<br />
-	-	Car.select(:year).count<br />
-	-	# -> Count of the different year values in the year column.<br />
+		Car.group(:make).count<br />
+		# -> { ’Nissan’ => 80 , ‘Mazda’ => 53 , ’Tesla’ => 1337 }<br />
+		You can also group multiple columns and then get the count:<br />
+		Car.group(:model, :color)<br />
+		# -> { [‘Model S’, ‘red’] => 74, [‘GTR’, ‘silver’] => 55 }<br />
+		Car.select(:year).count<br />
+		# -> Count of the different year values in the year column.<br />
   * Anything else?:  Not all valid select methods will work with count.  If it is invalid an error will be thrown
 
 David Davydov
