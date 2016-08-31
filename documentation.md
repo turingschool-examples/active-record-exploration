@@ -148,10 +148,10 @@ Nate
 
 Raphael
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: Offset
+  * Description: Essentially it specifies the number of rows that needs to be skipped before returning rows.
+  * Example: Artist.offset(10)
+  * Anything else?: Let's say we have a total Artist.count => 12. When I call the ActiveRecord method "offset" with a given value of 10, it will return the following:  Artist.offset(10) => #<ActiveRecord::Relation [#<Artist id: 11, name: "Tommy Guerrero", created_at: "2016-08-31 15:51:27", updated_at: "2016-08-31 15:51:27">, #<Artist id: 12, name: "Ray Barbee", created_at: "2016-08-31 15:51:27", updated_at: "2016-08-31 15:51:27">]>.
 
 Ryan
 
