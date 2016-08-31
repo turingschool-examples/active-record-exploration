@@ -52,11 +52,13 @@ Dan
   * Example:<br />
 	**Count All:**  <br />
 	-	Car.count<br />
-	-	# -> The count of all the cars<br />
-	**Count by Column:** <br />
+	-	# -> The count of all the cars<br /><br />
+
+**Count by Column:** <br />
 	-	Car.count(:sunroof)<br />
-	-	# -> All the cars that have a value in the sunroof column<br />
-	**Count with Group or Select:** <br />
+	-	# -> All the cars that have a value in the sunroof column<br /><br />
+
+**Count with Group or Select:** <br />
 	-	Car.group(:make).count<br />
 	-	# -> { ’Nissan’ => 80 , ‘Mazda’ => 53 , ’Tesla’ => 1337 }<br />
 	-	You can also group multiple columns and then get the count:<br />
