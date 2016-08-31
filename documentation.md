@@ -16,10 +16,10 @@ Brendan
 
 Brian
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: Sum
+  * Description: Sum calculates the sum of all values on a given column, and will return the same datatype of these values 
+  * Example: Company.sum(:revenue) => 100000
+  * Anything else?: If there is no row in the column (i.e. no data), the method will return 0
 
 Goss
 
