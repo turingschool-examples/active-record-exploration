@@ -89,10 +89,13 @@ Jasmin
 
 Jean
 
-  * AR Method: 
-  * Description:
+  * AR Method: Order
+  * Description: Order will order a collection according to the value of the specified attribute
   * Example:
+   *  `Student.order('name')` is the same as `Student.order(:name)`, both order by the value of name
+   *   `Student.order('created_at DESC')` is the same as `Student.order(created_at: :desc)`, both order by the value in the specified ascending/descending order
   * Anything else?:
+   *  ordering by letters will order alphabetically, while ordering numbers will order numerically. You can also chain ordering - e.g. `Student.order(:name).order(updated_at: :asc)` will order first alphabetically by name then by ascending update time
 
 Jesse Spevack
 
