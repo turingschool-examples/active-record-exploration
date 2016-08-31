@@ -92,10 +92,10 @@ Nate
 
 Raphael
 
-  * AR Method: 
-  * Description:
-  * Example:
-  * Anything else?:
+  * AR Method: Offset
+  * Description: Essentially it specifies the number of rows that needs to be skipped before returning rows.
+  * Example: SELECT * FROM clients OFFSET 30
+  * Anything else?: will return clients beginning with the 31st row and SQL looks like above.
 
 Ryan
 
