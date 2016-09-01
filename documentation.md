@@ -32,8 +32,8 @@ Chase
 
   * AR Method: Group
   * Description: Returns an array of unique objects based on whatever attribute you have passed it.  
-  * Example: Users.group(:name) will return [#<User id: 1, name: bob, state: Texas> #<User id:2, name:Chase, state: Texas>] 
-  * Anything else?: Group is almost always follwed by a .count.    
+  * Example: In a scenario where there are many users named Chase, and many users named Bob, Users.group(:name) will return [#<User id: 1, name: bob, state: Texas> #<User id:2, name:Chase, state: Texas>].  
+  * Anything else?: Group is almost always follwed by a .count.   I THINK this is because grouping them all together isn't very useful unless we are trying to find the number of each identical attribute that exists.  
 
 Calaway
   * AR Method: 
